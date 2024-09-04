@@ -68,3 +68,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @media screen and (min-width: 768px) {
+    .list:hover .item:not(:hover) {
+      filter: grayscale(1) blur(2px);
+    }
+  }
+}
