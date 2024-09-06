@@ -1,4 +1,4 @@
-# Kanastra Frontend Challenge
+# Marvel Frontend Challenge
 This project is a responsive web application that consumes the Marvel API to display a list of Marvel characters with pagination, filtering, and detailed character information. It also includes a chart that visualizes the number of comics per character on each page.
 
 ### Table of Contents
@@ -23,7 +23,7 @@ This project is a responsive web application that consumes the Marvel API to dis
 - clsx: Utility for constructing className strings conditionally.
 - Class Variance Authority (CVA): Library for creating utility-based component variants.
 - Vitest: A fast unit test framework.
-- Chart.js or Recharts (Optional): For data visualization of the number of comics per character.
+- Nivo Circle Packing: For data visualization of the number of comics per character.
 ## Features
 - Character Listing: Displays a list of Marvel characters with pagination.
 - Character Details: View detailed information about a character, including name, description, comics, and movies/series.
@@ -36,8 +36,8 @@ This project is a responsive web application that consumes the Marvel API to dis
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/kanastra-challenge.git
-cd kanastra-challenge
+git clone https://github.com/gabrielrochas/marvel-app.git
+cd marvel-app
 ```
 Install dependencies:
 
