@@ -3,8 +3,23 @@ import * as React from 'react'
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
 
 import { ButtonProps, buttonVariants } from '@/components/ui/button'
+import { createI18n } from '@/lib/i18n'
 import { cn } from '@/lib/shadcn/utils'
 
+const language = {
+  next: {
+    'pt-BR': 'Próxima',
+    en: 'Next',
+    es: 'Próxima',
+  },
+  previous: {
+    'pt-BR': 'Anterior',
+    en: 'Previous',
+    es: 'Anterior',
+  },
+}
+
+const i18n = createI18n(language)
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav
     role='navigation'
@@ -72,7 +87,7 @@ const PaginationPrevious = ({
     {...props}
   >
     <ChevronLeft className='h-4 w-4' />
-    <span>Previous</span>
+    <span>{i18n('previous')}</span>
   </PaginationLink>
 )
 PaginationPrevious.displayName = 'PaginationPrevious'
@@ -87,7 +102,7 @@ const PaginationNext = ({
     className={cn('gap-1 pr-2.5', className)}
     {...props}
   >
-    <span>Next</span>
+    <span>{i18n('next')}</span>
     <ChevronRight className='h-4 w-4' />
   </PaginationLink>
 )
