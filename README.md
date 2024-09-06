@@ -104,7 +104,7 @@ To secure API keys, sensitive information is stored in environment variables and
 - Rate Limiting: Considered when making API requests to avoid hitting limits.
 - Input Validation: User inputs are validated and sanitized before making API requests.
 ## Demo
-A live demo of the project can be accessed [here](https://kanastra-challenge.vercel.app).
+A live demo of the project can be accessed [here](https://kanastra-challenge-plum.vercel.app/).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/gabrielrochas/marvel-app?tab=MIT-1-ov-file) file for details.
