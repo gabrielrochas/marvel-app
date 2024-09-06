@@ -6,10 +6,9 @@ export type Character = {
     path: string
     extension: string
   }
-  comics: { items: { name: string }[] }
 }
 
-export type Comics = {
+export type ComicsList = {
   id: number
   title: string
   textObject: TextObject[]
@@ -30,7 +29,7 @@ export type MarvelCharactersData = {
     count: number
     limit: number
     offset: number
-    results: Character[]
+    results: Results[]
     total: number
   }
 }
@@ -39,4 +38,31 @@ export interface RequestParams {
   limit: number
   offset: number
   page?: number
+  nameStartsWith?: string
+}
+
+export interface CharacterInfoBase {
+  available: number
+  collectionURI: string
+  items: {
+    resourceURI: string
+    name: string
+  }[]
+}
+
+export type CharacterComics = CharacterInfoBase
+export type CharacterEvents = CharacterInfoBase
+export type CharacterSeries = CharacterInfoBase
+export type CharacterStories = CharacterInfoBase
+
+type Results = Character & {
+  comics: CharacterComics
+  events: CharacterEvents
+  series: CharacterSeries
+  stories: CharacterStories
+}
+export interface CharacterData {
+  data: {
+    results: Results[]
+  }
 }

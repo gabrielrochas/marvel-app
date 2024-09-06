@@ -31,7 +31,8 @@
       "nursery": {
         "useSortedClasses": "error"
       }
-    }
+    },
+    "ignore": ["./src/routeTree.gen.ts"]
   },
   "javascript": {
     "formatter": {

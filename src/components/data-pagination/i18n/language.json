@@ -1,0 +1,22 @@
+{
+  "first_page": {
+    "pt-BR": "Primeira página",
+    "en": "First page",
+    "es": "Premera página"
+  },
+  "last_page": {
+    "pt-BR": "Última página",
+    "en": "Last page",
+    "es": "Ultima página"
+  },
+  "next_page": {
+    "pt-BR": "Próxima página",
+    "en": "Next page",
+    "es": "Próxima página"
+  },
+  "previous_page": {
+    "pt-BR": "Página anterior",
+    "en": "Previous page",
+    "es": "Anterior página"
+  }
+}

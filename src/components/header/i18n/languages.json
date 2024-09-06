@@ -1,0 +1,22 @@
+{
+  "back": {
+    "pt-BR": "Voltar",
+    "en": "Back",
+    "es": "Volver"
+  },
+  "search_for_character": {
+    "pt-BR": "Pesquisar por personagem",
+    "en": "Search for character",
+    "es": "Buscar por personage"
+  },
+  "hidden_information": {
+    "pt-BR": "Informações ocultas",
+    "en": "Hidden information",
+    "es": "Informaciones ocultas"
+  },
+  "search_for_name": {
+    "pt-BR": "Pesquisar por nome",
+    "en": "Search for name",
+    "es": "Buscar por nombre"
+  }
+}

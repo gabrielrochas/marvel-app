@@ -8,15 +8,17 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination'
-import { createI18n } from '@/lib/i18n'
 
-import languages from './i18n/language.json'
-import { useDataPaginationViewController } from './view-controller'
-
-const i18n = createI18n(languages)
-export function DataPagination() {
-  const { page, onPageChange, maxPages } = useDataPaginationViewController()
-
+interface PaginationSearchProps {
+  page: number
+  maxPages: number
+  onPageChange: (page: number) => void
+}
+export function SearchPagination({
+  page,
+  maxPages,
+  onPageChange,
+}: PaginationSearchProps) {
   return (
     <Pagination className='my-4'>
       <PaginationContent>
@@ -25,7 +27,6 @@ export function DataPagination() {
             isActive={page > 1}
             aria-disabled={page === 1}
             onClick={() => onPageChange(1)}
-            title={i18n('first_page')}
           >
             <ChevronsLeft className='h-4 w-4' />
           </PaginationLink>
@@ -35,7 +36,6 @@ export function DataPagination() {
             isActive={page > 1}
             aria-disabled={page === 1}
             onClick={() => onPageChange(page - 1 < 1 ? 1 : page - 1)}
-            title={i18n('next_page')}
           />
         </PaginationItem>
 
@@ -46,7 +46,6 @@ export function DataPagination() {
             onClick={() =>
               onPageChange(page + 1 > maxPages ? maxPages : page + 1)
             }
-            title={i18n('next_page')}
           />
         </PaginationItem>
 
@@ -55,7 +54,6 @@ export function DataPagination() {
             isActive={page < maxPages}
             aria-disabled={page === maxPages}
             onClick={() => onPageChange(maxPages)}
-            title={i18n('last_page')}
           >
             <ChevronsRight className='h-4 w-4' />
           </PaginationLink>

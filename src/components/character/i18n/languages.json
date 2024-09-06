@@ -1,0 +1,22 @@
+{
+  "comics": {
+    "pt-BR": "HQs",
+    "en": "Comics",
+    "es": "HQs"
+  },
+  "events": {
+    "pt-BR": "Eventos",
+    "en": "Events",
+    "es": "Eventos"
+  },
+  "series": {
+    "pt-BR": "Séries",
+    "en": "Series",
+    "es": "Series"
+  },
+  "stories": {
+    "pt-BR": "Histórias",
+    "en": "Stories",
+    "es": "Histórias"
+  }
+}

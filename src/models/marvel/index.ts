@@ -15,7 +15,7 @@ export function useCharactersModel() {
   })
 
   const {
-    data: characters,
+    data,
     error,
     isError,
     isFetching,
@@ -39,7 +39,7 @@ export function useCharactersModel() {
   }
 
   return {
-    characters,
+    characters: data,
     error,
     isError,
     isFetching,

@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { Card, CardContent } from '../ui/card'
 import { LoadingCard } from '../ui/loading-card'
 import { useCharactersController } from './view-controller'
@@ -23,7 +24,7 @@ export function MarvelCharacters() {
   return (
     <div className='list grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-4'>
       {characters?.data.results.map(character => (
-        <a href={`/${character.id}`} key={character.id}>
+        <Link to={`/character/${character.id}`} key={character.id}>
           <Card>
             <CardContent className='item group relative h-[400px] w-full rounded-lg p-0'>
               <img
@@ -35,12 +36,9 @@ export function MarvelCharacters() {
               <h3 className='absolute top-0 left-0 z-1 p-4 font-bold text-4xl text-background opacity-100 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] transition-opacity duration-500 group-hover:opacity-100 md:opacity-0'>
                 {character.name}
               </h3>
-              <div className='text-sm'>
-                Comics: {character.comics.items.length}
-              </div>
             </CardContent>
           </Card>
-        </a>
+        </Link>
       ))}
     </div>
   )
