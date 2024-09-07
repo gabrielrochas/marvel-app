@@ -34,9 +34,9 @@ export function SettingsWidget() {
   }
 
   return (
-    <div className='fixed top-0 right-4 bottom-0 m-auto h-6 w-6'>
+    <div className='fixed right-4 bottom-4 z-20 m-auto h-6 w-6 text-primary-red drop-shadow-title'>
       <Dialog>
-        <DialogTrigger className='transition-all duration-300 hover:rotate-45 hover:text-primary-red data-[state=open]:rotate-45 data-[state=open]:text-primary-red'>
+        <DialogTrigger className='transition-all duration-300 hover:rotate-45 data-[state=open]:rotate-45 data-[state=open]:text-primary-red'>
           <SettingsIcon className='h-6 w-6' />
         </DialogTrigger>
         <DialogContent className='space-y-6'>

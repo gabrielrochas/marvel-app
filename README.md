@@ -112,4 +112,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 ## Contact
 - [GitHub](https://github.com/gabrielrochas)
 - [Twitter](https://twitter.com/gabrielrochas)
-- [LinkedIn](https://www.linkedin.com/in/gabrielrochas/)
+- [LinkedIn](https://www.linkedin.com/in/gabrielrochaas/)
